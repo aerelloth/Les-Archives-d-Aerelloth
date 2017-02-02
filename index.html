@@ -1,0 +1,221 @@
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Euphoria+Script" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet"> 
+		<style>
+			.livre {
+			  background-image: url("img/main-page.png");
+			  background-repeat: no-repeat;
+			  height: 630px;
+			  width: 930px;
+			  margin: 10% auto;
+			  display: flex;
+			}
+
+			.pagegauche {
+			  overflow-y: hidden;
+			  margin: 40px 0 0 60px;
+			}
+
+			/* RESPONSIVE */
+
+			@media screen and (max-width:930px){
+			  .livre {
+			    background-image: url("../img/responsive.png");
+			    background-position: center center;
+			    background-repeat: no-repeat;
+			    background-size: 80% auto;
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: flex-start;
+			    align-items: center;
+			    height: 110vw;
+			    width: 100%;
+			  }
+
+			  .pagegauche {
+			    display: block;
+			    height: auto;
+			    margin-top: 100px;
+			    overflow-x: hidden;
+			    overflow-y: auto;
+			    width: 60%;
+			    margin-left: 0;
+			  }
+
+			  .pagedroite {
+			    height: 800px;
+			    margin: 0;
+			    overflow-x: hidden;
+			    overflow-y: auto;
+			    width: 60%;
+			  }
+			}
+
+			@media screen and (max-width:850px){
+			  .pagedroite, .pagedroite > div {
+			    height: 800px;
+			  }
+			}
+
+			@media screen and (max-width:800px){
+			  .pagedroite, .pagedroite > div {
+			    height: 700px;
+			  }
+			  .pagedroite h1 {
+			    margin-top: 0px;
+			  }
+			}
+
+			@media screen and (max-width:750px){
+			  .pagedroite, .pagedroite > div {
+			    height: 650px;
+			  }
+			}
+
+			@media screen and (max-width:700px){
+			  .pagedroite, .pagedroite > div {
+			    height: 650px;
+			  }
+			  .pagegauche {
+			    margin-top: 80px;
+			  }
+			}
+
+			@media screen and (max-width:650px){
+			  .pagedroite, .pagedroite > div {
+			    height: 600px;
+			  }
+			}
+
+			@media screen and (max-width:600px){
+			  .pagedroite, .pagedroite > div {
+			    height: 550px;
+			  }
+			  .pagegauche {
+			    margin-top: 60px;
+			  }
+			}
+
+			@media screen and (max-width:550px){
+			  .pagedroite, .pagedroite > div {
+			    height: 500px;
+			  }
+			}
+
+			@media screen and (max-width:500px){
+			    .livre {
+			    background-size: 100% auto;
+			    height: 140vw;
+			    margin-top: 0;
+			  }
+
+			  .pagegauche, .pagedroite {
+			    width: 80%;
+			  }
+
+			  .pagedroite, .pagedroite > div {
+			    height: 550px;
+			  }
+			}
+
+			@media screen and (max-width:400px){
+			  .pagegauche {
+			    margin-top: 40px;
+			  }
+			  .pagedroite, .pagedroite > div {
+			    height: 450px;
+			  }
+
+			  nav h2 {
+			    margin-top: 0px;
+			    font-size: 16px;
+			    margin-bottom: 25px;
+			  }
+
+			  .pagedroite ul ul {
+			    font-size: 12px;
+			  }
+			}
+
+			@media screen and (max-width:300px){
+			  .pagedroite, .pagedroite > div {
+			    height: 450px;
+			  }
+
+			  .pagedroite .aerelloth h1 {
+			    font-size: 18px;
+			  }
+
+			  .pagedroite .aerelloth h2 {
+			    font-size: 14px;
+			  }
+			  .pagedroite ul ul li {
+			    line-height: 1.2;
+			  }
+			}
+		</style>
+
+		<title>Aerelloth : I estel dartha ui...</title>
+	</head>
+	<body>
+		<div class="livre">
+		<div class="pagegauche">
+		</div>
+		<div class="pagedroite">
+			<nav class="aerelloth">
+				<h1>Les Archives d'Aerelloth</h1>
+				<h2>I estel dartha ui...</h2>
+				<ul>
+					<li><span><a href="sommaire.html">Sommaire &gt;</a></span>
+						<ul>
+							<li><a href="preface.html">Préface</a></li>
+							<li><a href="dernieres-lignes.html">Dernières lignes</a></li>
+							<li><span><a href="chroniques.html">Chroniques ›</a></span>
+								<ul>
+									<li><a href="chroniques/les-archives-d-aerelloth.html">Les Archives d'Aerelloth</a></li>
+									<li><a href="chroniques/les-presentations.html">Les présentations</a></li>
+								</ul>
+							</li>
+							<li><span><a href="histoires.html">Histoires ›</a></span>
+								<ul>
+									<li><a href="histoires/aerelloth-fleur-de-l-ocean.html">Aerelloth Fleur-de-l'Océan</a></li>
+									<li><a href="histoires/une-rencontre-dans-la-comte.html">Une rencontre dans la Comté</a></li>
+									<li><a href="histoires/une-soiree-au-poney-fringant.html">Une soirée au Poney Fringant</a></li>
+									<li><a href="histoires/musique-biere-et-tartes-aux-pommes.html">Musique, bière et tartes aux pommes</a></li>
+									<li><a href="histoires/oeil-pour-oeil.html">Oeil pour oeil</a></li>
+									<li><a href="histoires/un-poignard-dans-le-noir.html">Un poignard dans le noir</a></li>
+									<li><a href="histoires/tempete-d-ombres.html">Tempête d'ombres</a></li>
+									<li><a href="histoires/l-eleve-et-le-maitre.html">L'élève et le maître</a></li>
+									<li><a href="histoires/histoires-de-famille.html">Histoires de famille</a></li>
+									<li><a href="histoires/le-bleu-du-ciel.html">Le bleu du ciel</a></li>
+									<li><a href="histoires/la-fleche.html">La flèche</a></li>
+									<li><a href="histoires/les-brumes-du-souvenir.html">Les brumes du souvenir</a></li>
+									<li><a href="histoires/reminiscences.html">Réminiscences</a></li>
+									<li><a href="histoires/le-serment-de-combe.html">Le Serment de Combe</a></li>
+									<li><a href="histoires/le-lai-d-aduial.html">Le Lai d'Aduial</a></li>
+								</ul>
+							</li>
+							<li><span><a href="annexes.html">Annexes ›</a></span>
+								<ul>
+									<li><a href="annexes/galerie-de-portraits.html">Galerie de portraits</a></li>
+									<li><a href="annexes/enigme-du-festival-du-printemps.html">Enigme du festival du printemps</a></li>
+									<li><a href="annexes/solution-de-l-enigme.html">Solution de l'énigme</a></li>
+									<li><a href="annexes/message-aux-voyageurs.html">Message aux Voyageurs</a></li>
+									<li><a href="annexes/article-mysterieux.html">Article mystérieux</a></li>
+								</ul>
+							</li>
+							<li><a href="contact.html">Me contacter</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+</body>
+</html>
